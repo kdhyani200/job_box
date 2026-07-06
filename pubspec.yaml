@@ -1,0 +1,75 @@
+name: job_tracker
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  image_picker: ^1.2.3
+  intl: ^0.20.3
+  google_fonts: ^8.1.0
+  url_launcher: ^6.3.2
+  flutter_native_splash: ^2.4.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.4.9
+  hive_generator: ^2.0.1
+  flutter_launcher_icons: ^0.14.4
+
+  flutter_lints: ^6.0.0
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/logos/app_logo.png"
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/logos/launcher_icon.png
+  branding: assets/logos/light_branding.png
+  branding_bottom_padding: 24
+
+  color_dark: "#0B1E33"
+  image_dark: assets/logos/launcher_icon.png
+  branding_dark: assets/logos/dark_branding.png
+  fullscreen: false
+
+  android_12:
+    color: "#ffffff"
+    image: assets/logos/launcher_icon.png
+    branding: assets/logos/light_branding_android_12.png
+    branding_bottom_padding: 24
+
+    color_dark: "#0B1E33"
+    image_dark: assets/logos/launcher_icon.png
+    branding_dark: assets/logos/dark_branding_android_12.png
+    fullscreen: false
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/logos/email.png
+    - assets/logos/github-sign.png
+    - assets/logos/linkedin.png
+    - assets/logos/light_splash.png
+    - assets/logos/night_splash.png
+    - assets/logos/light_branding.png
+    - assets/logos/dark_branding.png
+    - assets/logos/light_branding_android_12.png
+    - assets/logos/dark_branding_android_12.png
+    - assets/logos/launcher_icon.png
+    - assets/logos/in_app_icon.png
+    - assets/logos/app_logo.png
+    - assets/logos/footer.png
