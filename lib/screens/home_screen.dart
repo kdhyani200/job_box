@@ -42,7 +42,7 @@ class HomeScreen extends StatelessWidget {
             return const _EmptyState();
           }
 
-          final sortedJobs = box.values.toList()
+          final jobs = box.values.toList()
             ..sort((a, b) => b.appliedDate.compareTo(a.appliedDate));
 
           return SingleChildScrollView(
@@ -52,7 +52,7 @@ class HomeScreen extends StatelessWidget {
                   padding: const EdgeInsets.fromLTRB(16, 10, 16, 0),
                   child: Column(
                     children: [
-                      _TotalApplicationsCard(count: sortedJobs.length),
+                      _TotalApplicationsCard(count: jobs.length),
 
                       const SizedBox(height: 16),
 
@@ -69,10 +69,10 @@ class HomeScreen extends StatelessWidget {
 
                       const SizedBox(height: 12),
 
-                      ...List.generate(sortedJobs.length, (index) {
+                      ...List.generate(jobs.length, (index) {
                         return Padding(
                           padding: const EdgeInsets.only(bottom: 14),
-                          child: JobTile(job: sortedJobs[index]),
+                          child: JobTile(job: jobs[index]),
                         );
                       }),
                     ],
