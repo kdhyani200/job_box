@@ -531,6 +531,8 @@ class _AddEditJobScreenState extends State<AddEditJobScreen> {
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
                 ),
 
+                const SizedBox(height: 12),
+
                 TextFormField(
                   controller: _notesController,
                   maxLines: 3,
